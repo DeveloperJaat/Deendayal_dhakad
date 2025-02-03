@@ -66,8 +66,7 @@ async def start(client, message):
                     InlineKeyboardButton(' ʜᴇʟᴘ 🚨', callback_data='help'),
                     InlineKeyboardButton(' ᴀʙᴏᴜᴛ ❓ ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('Dᴏɴᴀᴛɪᴏɴ 💰', callback_data='donation'),
-                    InlineKeyboardButton('Eᴀʀɴ ᴍᴏɴᴇʏ..💲', callback_data="shortlink_info")
+                    InlineKeyboardButton('Dᴏɴᴀᴛɪᴏɴ 💰', callback_data='donation')
                 ],[
                     InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
                   ]]
@@ -127,8 +126,7 @@ async def start(client, message):
                     InlineKeyboardButton(' ʜᴇʟᴘ 🚨', callback_data='help'),
                     InlineKeyboardButton(' ᴀʙᴏᴜᴛ ❓ ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('Dᴏɴᴀᴛɪᴏɴ 💰', callback_data='donation'),
-                    InlineKeyboardButton('Eᴀʀɴ ᴍᴏɴᴇʏ..💲', callback_data="shortlink_info")
+                    InlineKeyboardButton('Dᴏɴᴀᴛɪᴏɴ 💰', callback_data='donation')
                 ],[
                     InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
                 ]]
@@ -1211,7 +1209,7 @@ async def shortlink(bot, message):
     try:
         command, shortlink_url, api = data.split(" ")
     except:
-        return await message.reply_text("<b>ᴄᴏᴍᴍᴀɴᴅ ɪɴᴄᴏᴍᴘʟᴇᴛᴇ !\nɢɪᴠᴇ ᴍᴇ ᴄᴏᴍᴍᴀɴᴅ ᴀʟᴏɴɢ ᴡɪᴛʜ ꜱʜᴏʀᴛɴᴇʀ ᴡᴇʙꜱɪᴛᴇ ᴀɴᴅ ᴀᴘɪ.\n\nꜰᴏʀᴍᴀᴛ : <code>/shortlink krishnalink.com c8dacdff6e91a8e4b4f093fdb4d8ae31bc273c1a</code>")
+        return await message.reply_text("<b>ᴄᴏᴍᴍᴀɴᴅ ɪɴᴄᴏᴍᴘʟᴇᴛᴇ !\nɢɪᴠᴇ ᴍᴇ ᴄᴏᴍᴍᴀɴᴅ ᴀʟᴏɴɢ ᴡɪᴛʜ ꜱʜᴏʀᴛɴᴇʀ ᴡᴇʙꜱɪᴛᴇ ᴀɴᴅ ᴀᴘɪ.\n\nꜰᴏʀᴍᴀᴛ : <code>/inshorturl.com fe8b524ab72d7b604f439e192623cf300d944963</code>")
     reply = await message.reply_text("<b>ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ...</b>")
     shortlink_url = re.sub(r"https?://?", "", shortlink_url)
     shortlink_url = re.sub(r"[:/]", "", shortlink_url)
